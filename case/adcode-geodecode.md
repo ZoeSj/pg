@@ -39,8 +39,6 @@ type: "post"
 
 简单的说，就是找到用户坐标点距离最近的县级行政区划中心点。但显然，这种方式的误差相当之大，只能凑合用用。
 
-
-
 ## 科学的方法
 
 ```sql
@@ -58,21 +56,24 @@ CREATE TABLE counties
 CREATE INDEX ON counties USING GIST(fence);
 ```
 
-
-
 ### 查询
 
 查询的SQL使用：
 
 ```sql
-SELECT adcode, province, city, county FROM counties 
-WHERE ST_WithIn(ST_Point(100, 28),fence);
+SELECT adcode, province, city, county FROM counties WHERE ST_WithIn(ST_Point(100, 28),fence);
 
 SELECT adcode, province, city, county FROM counties 
 WHERE ST_Contains(fence, ST_Point(100, 28));
 ```
 
 耗时0.6毫秒，完全达到生产水准
+
+
+
+```
+SELECT adcode, province, city, county FROM adcode WHERE ST_WithIn(ST_Point(100, 28),fence);
+```
 
 
 

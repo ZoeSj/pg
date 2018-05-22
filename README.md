@@ -18,6 +18,7 @@
 - 架构演化：从单体到总线
 - CIA与ACID：Beyond Availability
 - [存储过程：Pros&Cons](misc/stored-procedure.md)
+- [架构设计模式](misc/arch-pattern.md)
 
 ### 案例
 
@@ -173,7 +174,8 @@
 
 - [故障档案：移走负载导致的性能恶化故障](fault/download-failure.md)
 - [故障档案：事务ID回卷故障](fault/xid-wrap-around.md)
-- 故障档案：pg_repack导致的故障
+- [故障档案：pg_repack导致的故障](fault/pg_repack.md)
+- [Template0的清理与修复](fault/vacuum-template0.md)
 - PostgreSQL脏数据修复
 - 救火：杀查询的正确姿势
 - 存疑事务：提交日志损坏问题分析与修复
@@ -192,6 +194,7 @@
 - VACUUM原理
 - WAL：[PostgreSQL WAL与检查点](internal/wal-and-checkpoint.md)
 - Buffer原理
+- 逻辑解码：变更数据捕获CDC
 - 流复制原理与实现细节
 - 二阶段提交：原理与实践
 - PostgreSQL Wire Protocal：前后端交互协议
