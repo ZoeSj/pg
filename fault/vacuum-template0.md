@@ -23,19 +23,21 @@ type: "draft"
 ```bash
 #!/bin/bash
 
-# show age
-psql -tc "select datname,age(datfrozenxid) FROM pg_database where datname ~ 'template';"
+# print
+psql -qAtc "select datname,age(datfrozenxid) FROM pg_database where datname ~ 'template';"
 
-# vacuum template1
-psql template1 -tc "vacuum freeze verbose;"
+# fix postgres
+psql -qAtc "VACUUM FREEZE;"
+psql template1 -qAtc "VACUUM FREEZE;"
 
-# vacuum tempate0
+
 psql -tc "update pg_database set datallowconn='t' where datname='template0';"
-psql template0 -tc "vacuum freeze verbose;"
+psql template0 -qAtc "VACUUM FREEZE;"
 psql -tc "update pg_database set datallowconn='f' where datname='template0';"
 
-# show age
+# print
 psql -tc "select datname,age(datfrozenxid) FROM pg_database;"
+
 ```
 
 

@@ -15,6 +15,7 @@
 - [计算机系为什么要学数据库原理和设计？](misc/why-learn-database.md)
 - [区块链与分布式数据库](misc/blockchain-and-database.md)
 - [一致性：一个过载的术语](misc/consistency-linearizability.md)
+- [可用性与容灾](misc/availability.md)
 - 架构演化：从单体到总线
 - CIA与ACID：Beyond Availability
 - [存储过程：Pros&Cons](misc/stored-procedure.md)
@@ -43,6 +44,7 @@
 - 自动化后端：PostGraphQL, PgRest, PostgRest横向对比
 - PostGraphQL：解放前后端生产力
 - postgres_fdw应用：管理远程数据库
+- 逻辑解码：变更数据捕获CDC
 
 ### 功能
 
@@ -144,6 +146,7 @@
 - 开源监控方案横向对比：pg_statsinfo, pgwatch2, prometheus
 - 静态监控，配置项与角色
 - 轻重缓急，快慢分离
+- 操作系统监控
 - 监控CPU使用
 - 监控磁盘网络IO
 - 监控数据库基本指标
@@ -153,6 +156,7 @@
 - 监控复制延迟
 - [监控表：空间，膨胀，年龄，IO](monitor/table.md)
 - [监控索引：空间，膨胀，重复，闲置](monitor/index.md)
+- 系统级别监控
 - 监控函数：调用量，时间
 - 监控连接池：QPS，延迟，排队，连接
 - 监控自动清理与检查点
@@ -175,6 +179,8 @@
 - [故障档案：移走负载导致的性能恶化故障](fault/download-failure.md)
 - [故障档案：事务ID回卷故障](fault/xid-wrap-around.md)
 - [故障档案：pg_repack导致的故障](fault/pg_repack.md)
+- [故障档案：从删库到跑路](fault/drop-database.md)
+- 磁盘写满故障
 - [Template0的清理与修复](fault/vacuum-template0.md)
 - PostgreSQL脏数据修复
 - 救火：杀查询的正确姿势

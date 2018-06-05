@@ -43,10 +43,12 @@ type: "post"
 
 这里以`pgx`为例，它性能表现不俗，并对PostgreSQL诸多特性与类型有着良好的支持。既可使用Ad-Hoc API，也提供了标准数据库接口的实现：`github.com/jackc/pgx/stdlib`。
 
-	import (
-		"database/sql"
-		_ "github.com/jackx/pgx/stdlib"
-	)
+```go
+import (
+	"database/sql"
+	_ "github.com/jackx/pgx/stdlib"
+)
+```
 
 使用`_`别名来匿名导入驱动，驱动的导出名字不会出现在当前作用域中。导入时，驱动的初始化函数会调用`sql.Register`将自己注册在`database/sql`包的全局变量`sql.drivers`中，以便以后通过`sql.Open`访问。
 
@@ -56,13 +58,15 @@ type: "post"
 
 加载驱动包后，需要使用`sql.Open()`来创建`sql.DB`：
 
-	func main() {
-		db, err := sql.Open("pgx","postgres://localhost:5432/postgres")
-		if err != nil {
-			log.Fatal(err)
-		}
-		defer db.Close()
+```go
+func main() {
+	db, err := sql.Open("pgx","postgres://localhost:5432/postgres")
+	if err != nil {
+		log.Fatal(err)
 	}
+	defer db.Close()
+}
+```
 
 `sql.Open`有两个参数：
 
