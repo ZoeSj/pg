@@ -1,4 +1,4 @@
-# PG
+# 															PG
 
 > PostgreSQL是个好数据库
 >
@@ -18,14 +18,15 @@
 - [可用性与容灾](misc/availability.md)
 - 架构演化：从单体到总线
 - CIA与ACID：Beyond Availability
-- [存储过程：Pros&Cons](misc/stored-procedure.md)
-- [架构设计模式](misc/arch-pattern.md)
+- [存储过程：Pros&Cons](misc/stored-procedure.md) 【EMPTY】
+- [架构设计模式](misc/arch-pattern.md)【EMPTY】
 
 ### 案例
 
 - [KNN问题极致优化：以找出最近餐馆为例](case/knn.md) 
-- [使用PostGIS高效解决行政区划归属查询问题](case/adcode-geodecode.md)
+- [PostGIS高效解决行政区划归属查询问题](case/adcode-geodecode.md)
 - [使用PostgreSQL实现简易推荐系统](case/pg-recsys.md)
+- [使用PostgreSQL实现IP地理位置查询](case/geoip.md)
 - 标签管理系统元数据库设计
 - 实时用户画像系统数据库设计
 - 博客数据库设计
