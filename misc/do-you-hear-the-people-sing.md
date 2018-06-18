@@ -131,7 +131,6 @@ The blood of the martyrs will
 
 Water the meadows of France 
 
-
 ------
 
 【挪威】Øystein Wiik (Norway) （你可听见人民之歌，愤怒人民的歌声？）
@@ -140,20 +139,25 @@ Kan du høyre folkets song? （kong du hai-rya folket song）
 
 Det er ein song frå arge menn! （Di-ya-ai song from argei man）
 
-
 ------
 
 【捷克】Jan Ježek (Czech Republic) 那是苦难中人民的歌声
 
-Chcem tady žít už máme bídy dost i běd i svévolí  (can-da-li-shit dushi-mame bidi-dust-i bied-i-svavoli)
+Chcem tady žít už máme bídy dost i běd i svévolí  (can-da-li-shit dushi-mame bidi-dost-i bied-i-svevoli)
 
 ------
 
 【丹麦】Kurt Ravn (Denmark) 当你跳动的心脏 应和战鼓声响 新生活开始 随曙光来到
 
-Når de dumpe trommers bud svares af stærke hjerteslag 
+Når de dumpe trommers bud, 
+
+svares af stærke hjerteslag                               
 
 Da skal et bedre liv gå ud i den nye dag 
+
+Daska   it  biedo liv ga  uli  de-nya-nag
+
+6     5     4   3   5   1    3   212  4      7   1
 
 ------
 
