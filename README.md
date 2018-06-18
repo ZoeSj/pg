@@ -13,13 +13,15 @@
 ### 杂文
 
 - [计算机系为什么要学数据库原理和设计？](misc/why-learn-database.md)
+- [PG好处都有啥？](misc/pg-yoxi.md)
 - [区块链与分布式数据库](misc/blockchain-and-database.md)
 - [一致性：一个过载的术语](misc/consistency-linearizability.md)
 - [可用性与容灾](misc/availability.md)
+- [PostgreSQL开发规约](misc/pg-convension.md)
 - 架构演化：从单体到总线
 - CIA与ACID：Beyond Availability
-- [存储过程：Pros&Cons](misc/stored-procedure.md) 【EMPTY】
-- [架构设计模式](misc/arch-pattern.md)【EMPTY】
+- 存储过程：Pros&Cons【EMPTY】
+- 架构设计模式【EMPTY】
 
 ### 案例
 
@@ -265,7 +267,10 @@
 
 - PgBackRest 中文文档
 
-  ​
+### PK
+
+* MySQL
+* Oracle
 
 
 
