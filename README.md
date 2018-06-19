@@ -199,7 +199,7 @@
 
 - 查询处理原理
 - JOIN类型及其内部实现
-- 并发控制原理：[PostgreSQL事务隔离等级](internal/isolation-level.md)
+- [并发控制原理](internal/concurrent-control.md)
 - VACUUM原理
 - WAL：[PostgreSQL WAL与检查点](internal/wal-and-checkpoint.md)
 - Buffer原理
